@@ -69,6 +69,10 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
             slidesPerView: 2,
             spaceBetween: 48,
         },
+        1400: {
+            slidesPerView: 3,
+            spaceBetween: 52,
+        },
     }
 });
 
@@ -126,4 +130,14 @@ themeButton.addEventListener('click', () => {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true,
+})
 
+sr.reveal('.home__data')
+sr.reveal('.home__handle', { delay: 700 })
+sr.reveal('.home__social, .home__scroll', { delay: 900, origin: 'bottom' })
