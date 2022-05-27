@@ -136,6 +136,7 @@ const sr = ScrollReveal({
     duration: 2500,
     delay: 400,
     // reset: true,
+    // optional
 })
 
 sr.reveal('.home__data')
